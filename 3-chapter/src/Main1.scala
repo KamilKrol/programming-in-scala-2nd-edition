@@ -1,7 +1,7 @@
 /**
   * Created by kamil on 13.12.15.
   */
-class Main1 {
+object Main1 {
 
   def main(args: Array[String]) {
     var immutableSet = Set(1, 2, 3)
