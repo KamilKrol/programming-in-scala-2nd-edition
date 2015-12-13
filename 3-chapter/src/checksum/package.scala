@@ -1,4 +1,4 @@
-import scala.collection.mutable.HashMap
+import scala.collection.mutable
 
 /**
   * Created by kamil on 13.12.15.
@@ -18,7 +18,7 @@ package object checksum {
   }
 
   object ChecksumAccumulator {
-    private val cache = HashMap[String, Int]()
+    private val cache = mutable.Map[String, Int]()
 
     def calculate(text: String): Int =
       if (cache.contains(text))
