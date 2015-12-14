@@ -14,11 +14,35 @@ class Rational(n: Int, d: Int) {
 
   def +(that: Rational) = add(that)
 
+  def +(i: Int) =
+    new Rational(numer + i * denom, denom)
+
+  def -(that: Rational) =
+    new Rational(
+      numer * that.denom - that.numer * denom,
+      denom * that.denom
+    )
+
+  def -(i: Int) =
+    new Rational(numer - i * denom, denom)
+
   def *(that: Rational) =
     new Rational(
       this.numer * that.numer,
       this.denom * that.denom
     )
+
+  def *(i: Int) =
+    new Rational(i * numer, denom)
+
+  def /(that: Rational) =
+    new Rational(
+      this.numer * that.denom,
+      this.denom * that.numer
+    )
+
+  def /(i: Int) =
+    new Rational(numer, denom * i)
 
   def add(that: Rational) =
     new Rational(
