@@ -12,6 +12,11 @@ object Main2 {
     println(twoThird <= half)
     println(twoThird >= half)
 
+    println(half == half)
+
+    val half2 = new Rational(1,2)
+    println(half == half2)
+
   }
 
 }
