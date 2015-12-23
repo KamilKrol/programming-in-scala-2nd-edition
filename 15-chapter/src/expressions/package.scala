@@ -37,7 +37,7 @@ package object expressions {
     case _ => expr
   }
 
-  def describe(expr: Expr) = expr match {
+  def describe(expr: Expr) = (expr: @unchecked) match {
     case Num(_) => "a number"
     case Var(_) => "a variable"
   }
