@@ -6,6 +6,7 @@ object Main1 {
   def main(args: Array[String]) {
 
     println("Test")
+    println("Changed")
 
   }
 
