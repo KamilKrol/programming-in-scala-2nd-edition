@@ -15,7 +15,7 @@ object Main4 {
 
     println
 
-    println(Direction.s.id)
+    println(Direction.S.id)
     println(Direction(3))
 
   }
