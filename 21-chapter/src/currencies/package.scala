@@ -12,7 +12,7 @@ package object currencies {
   class Dollar(amount: Double) extends Currency(amount, "USD")
 
   object Dollar {
-    implicit def dollarToEuro(dollar: Dollar): Euro = new Euro(0.95 * dollar.getAmount())
+    implicit def dollarToEuro(dollar: Dollar): Euro = new Euro(0.95 * dollar.getAmount)
   }
 
   class Euro(amount: Double) extends Currency(amount, "EUR")
